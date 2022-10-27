@@ -1,7 +1,7 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { CreatingService } from 'src/app/services/creating.service';
+import { CreatingService } from '../../services/creating.service';
 
 @Component({
   selector: 'app-subscriptions',

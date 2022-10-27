@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
-import { CreatingService } from 'src/app/services/creating.service';
+import { CreatingService } from '../../services/creating.service';
 
 @Component({
   selector: 'app-creating',
