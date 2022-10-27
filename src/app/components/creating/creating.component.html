@@ -1,0 +1,19 @@
+<div>
+  <ng-container *ngIf="obj | async as o">
+    <h2>{{ o.title }}</h2>
+  </ng-container>
+  <h2>Delaying value example</h2>
+  <p>Delaying param: {{ delaying }}</p>
+</div>
+
+<div>
+  <h2>Creating Obervable with Observable class constructor</h2>
+  <p>Active subscriptions: {{ openSubscriptionsLength }}</p>
+  <button (click)="show = !show">
+    {{ show ? "Destroy" : "Show" }} sub component
+  </button>
+  <app-subscriptions
+    *ngIf="show"
+    [subscriptions]="subscriptions"
+  ></app-subscriptions>
+</div>
